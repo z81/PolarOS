@@ -10,5 +10,6 @@ public/*.png
 public/*.wav
 public/*.mp3
 node_modules/*
+.idea
 *.sublime-project
 *.sublime-workspace

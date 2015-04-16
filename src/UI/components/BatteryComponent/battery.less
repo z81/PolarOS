@@ -1,0 +1,72 @@
+.battery {
+	display: inline-block;
+	font-size: 26px;
+	  color: rgb(45, 45, 45);
+}
+
+@font-face {
+  font-family: 'battery';
+  src: url('./battery.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "battery";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-bat1:before { content: '\e800'; } /* '' */
+.icon-bat2:before { content: '\e801'; } /* '' */
+.icon-bat3:before { content: '\e802'; } /* '' */
+.icon-bat4:before { content: '\e803'; } /* '' */
+.icon-bat-charge:before { content: '\e804'; } /* '' */
+/*
+@taskbar-size: 21px;
+@battery-size: 28px;
+#battery {
+	
+	margin-top: (@taskbar-size - @battery-size);
+	margin-right: 4px;
+	display: inline-block;
+	background: url("./battery2.gif");
+	background-size: 36px;
+	width: @battery-size;
+	height: 14px;
+	padding: 2px;
+	padding-right: 6px;
+	> div.level {
+		margin-top: 1px;
+		margin-left: 1px;
+		max-width: 100%;
+		width: 100%;
+		height: 12px;
+		background: white;
+	}	
+}*/

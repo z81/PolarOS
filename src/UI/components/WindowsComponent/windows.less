@@ -1,0 +1,201 @@
+.window {
+  position: fixed;
+  left: 100px;
+  top: 100px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #000000;
+  background: white;
+  min-height: 150px;
+  min-width: 150px;
+  z-index: 1000;
+
+
+  .wrapper {
+    height: 100%;
+
+    .header {
+      border-bottom: 1px solid #000000;
+      height: 25px;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        background: #008000;
+        display: inline-block;
+        margin: 3px;
+      }
+      .title {
+        display: inline;
+        text-align: center;
+        vertical-align: top;
+        padding-top: 4px;
+        text-align: center;
+        position: absolute;
+        z-index: 1009;
+        margin-left: -35px;
+        width: 100%;
+        overflow: hidden;
+      }
+      .controls {
+        float: right;
+        display: inline;
+        z-index: 1010;
+        position: relative;
+        overflow: hidden;
+
+        .button {
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          background: red;
+        }
+
+        .maximize {
+          background: #a9dd7e;
+        }
+        .maximize:hover {
+          background: #91dd0a;
+        }
+        .minimize {
+          background: #325aff;
+        }
+        .minimize:hover {
+          background: #0986ff;
+        }
+        .close {
+          background: #ff363d;
+        }
+        .close:hover {
+          background: #ff730b;
+        }
+      }
+    }
+    .body-drag-wrapper {
+      position: fixed;
+      background: rgba(255, 255, 255, 0);
+    }
+    .body {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      iframe {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        border: 0;
+      }
+    }
+  }
+
+}
+
+.window.active {
+  z-index: 10000;
+  .title {
+    //color: rgb(83, 167, 22);
+    color: #303030;
+  }
+}
+
+/* extend style */
+
+.window {
+  background: rgb(41, 41, 41);
+  border-radius: 6px;
+  color: rgb(167, 167, 167);
+  border: 2px solid rgb(41, 41, 41);
+  box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+  .wrapper {
+    .header {
+      border-bottom: 1px solid rgb(41, 41, 41);
+      .controls {
+        .button {
+          margin: 3px 3px 2px 2px;
+          border-radius: 9px;
+          height: 14px;
+          width: 14px;
+        }
+        .button.minimize {
+          background: rgb(7, 214, 47);
+          border: 1px solid rgba(0, 142, 27, 1);
+        }
+        .button.minimize:hover {
+          background: rgb(7, 240, 49);
+        }
+
+        .button.maximize {
+          background: rgb(252, 189, 4);
+          border: 1px solid rgb(196, 146, 4);
+        }
+        .button.maximize:hover {
+          background: rgb(255, 212, 12);
+        }
+        .button.close {
+          background: rgb(247, 94, 79);
+          border: 1px solid rgb(189, 80, 67);
+          margin-right: 5px;
+        }
+        .button.close:hover {
+          background: rgb(255, 98, 74);
+        }
+      }
+    }
+    .body {
+      border-bottom: 4px solid rgb(41, 41, 41);
+      border-radius: 4px;
+    }
+  }
+}
+
+/* extend style 2*/
+@window-color: #EBE9E9;
+
+.window {
+  background: @window-color;
+  border-radius: 6px;
+  color: rgb(167, 167, 167);
+  border: 2px solid @window-color;
+  box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+  .wrapper {
+    .header {
+      border-bottom: 1px solid @window-color;
+      .controls {
+        .button {
+          margin: 3px 3px 2px 2px;
+          border-radius: 9px;
+          height: 14px;
+          width: 14px;
+        }
+        .button.minimize {
+          background: rgb(7, 214, 47);
+          border: 1px solid rgba(0, 142, 27, 1);
+        }
+        .button.minimize:hover {
+          background: rgb(7, 240, 49);
+        }
+
+        .button.maximize {
+          background: rgb(252, 189, 4);
+          border: 1px solid rgb(196, 146, 4);
+        }
+        .button.maximize:hover {
+          background: rgb(255, 212, 12);
+        }
+        .button.close {
+          background: rgb(247, 94, 79);
+          border: 1px solid rgb(189, 80, 67);
+          margin-right: 5px;
+        }
+        .button.close:hover {
+          background: rgb(255, 98, 74);
+        }
+      }
+    }
+    .body {
+      border-bottom: 4px solid @window-color;
+      border-radius: 4px;
+    }
+  }
+}

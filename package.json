@@ -1,0 +1,45 @@
+{
+  "name": "PolarOS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bootstrap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^2.1.2",
+    "css-loader": "^0.9.1",
+    "es6-loader": "^0.2.0",
+    "file-loader": "^0.8.1",
+    "handlebars": "^2.0.0",
+    "handlebars-loader": "^0.1.8",
+    "html-webpack-plugin": "^1.1.0",
+    "jade": "^1.9.2",
+    "jade-html-loader": "0.0.2",
+    "jade-loader": "^0.7.1",
+    "json-loader": "^0.5.1",
+    "jsx-loader": "^0.12.2",
+    "karma": "^0.12.31",
+    "karma-babel-preprocessor": "^4.0.1",
+    "karma-chai": "^0.1.0",
+    "karma-mocha": "^0.1.10",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-webpack": "^1.5.0",
+    "less": "^2.4.0",
+    "less-loader": "^2.0.0",
+    "mocha": "^2.2.1",
+    "mocha-loader": "^0.7.1",
+    "msx-loader": "^0.2.0",
+    "style-loader": "^0.8.3",
+    "sweet.js": "^0.7.4",
+    "url-loader": "^0.5.5",
+    "webpack": "^1.5.3",
+    "webpack-dev-server": "^1.7.0"
+  },
+  "dependencies": {
+    "extract-text-webpack-plugin": "^0.3.8",
+    "mithril": "^0.1.30"
+  }
+}

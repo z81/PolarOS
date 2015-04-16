@@ -1,0 +1,120 @@
+//@taskbar-background: #333333;
+@taskbar-background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 4%,#e1e1e1 51%,#f1f1f1 95%,#f6f6f6 100%);
+@taskbar-height: 30px;
+
+#wallpaper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#taskbar {
+  width: 100%;
+  height: @taskbar-height;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  background: #ffffff;
+  background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 4%,#e1e1e1 51%,#f1f1f1 95%,#f6f6f6 100%);
+
+  //color: #ffffff;
+  color: #3D3A3A;
+  cursor: default;
+  box-shadow: 10px 11px 16px 10px #222121;
+  z-index: 90000;
+
+  #startbutton {
+    display: inline-block;
+    height: 100%;
+    width: 45px;
+    background: rgb(27, 103, 7);
+    padding-bottom: 1px;
+    background: url('../../images/iceberg.jpg');
+    background-size: cover;
+    background-position-x: 1px;
+  }
+  #startmenu {
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    position: absolute;
+    background: @taskbar-background;
+    bottom: @taskbar-height;
+    z-index: 100000;
+    box-shadow: 6px -6px 10px -7px #222121;
+    border-top-right-radius: 5px;
+    padding: 5px;
+    border: 4px solid rgba(195, 195, 195, 1);
+    border-bottom: none;
+
+    .user {
+      font-size: 30px;
+      .icon {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        border: 1px solid rgba(188, 195, 191, 0.78);
+      }
+    }
+    .shutdown {
+      float: right;
+    }
+    .items {
+      border: 1px solid #e4e4e4;
+      background: rgb(186, 186, 186);
+
+      .item {
+          width: 285px;
+          padding: 5px;
+          font-size: 30px;
+          display: inline-block;
+          background: rgba(255, 255, 255, 1);
+
+
+          .text {
+
+          }
+
+          .icon {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            padding-right: 10px;
+          }
+      }
+      .item:hover {
+        background: rgba(64, 193, 250, 0.4);
+      }
+    }
+  }
+  .task {
+    .icon {
+      width: 16px;
+      height: 16px;
+      background: #006400;
+      display: inline-block;
+      margin: 5px;
+    }
+    .title {
+      padding: 5px;
+      text-align: center;
+      display: inline-block;
+      vertical-align: super;
+    }
+
+    background: @taskbar-background;
+    height: 100%;
+    display: inline-block;
+    line-height: @taskbar-height;
+    margin-right: 1px;
+  }
+
+  .task.active {
+    //background: rgb(60, 60, 65);
+    background: #B2B2B2;
+  }
+
+}

@@ -9,6 +9,9 @@ public/*.jpeg
 public/*.png
 public/*.wav
 public/*.mp3
+public/*.woff2
+public/*.eot
+public/*.svg
 node_modules/*
 .idea
 *.sublime-project

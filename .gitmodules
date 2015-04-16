@@ -1,3 +1,6 @@
 [submodule "public/apps"]
 	path = public/apps
 	url = git@github.com:z81/PolarOSApps.git
+[submodule "docs"]
+	path = docs
+	url = git@github.com:z81/slate.git

@@ -4,7 +4,7 @@ var _lang = 'en-US';
  * [langsList languages to import]
  * @type {Array}
  */
-var langsList = ['ru', 'en-US', 'ja'];
+var langsList = ['ru', 'en-US', 'ja', 'ua'];
 var langs = {};
 
 
@@ -17,6 +17,9 @@ export default class Localization {
 		window.l = Localization.l;
 		_lang = window.navigator.userLanguage || window.navigator.language;
 		Localization._importLags();
+		if(!(_lang in langsList)) {
+			_lang = 'en-US';
+		}
 		_isReady = true;
 	}
 	/**

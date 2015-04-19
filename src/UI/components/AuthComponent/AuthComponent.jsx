@@ -8,8 +8,8 @@ export default class AuthComponent {
 		this.events = events;
 		this.hideError();
 		this.globalClass = "auth";
-		this.user = "bear";
-		this.pass = "";
+		this.user = "wolf";
+		this.pass = "1";
 		this.email = "";
 		this.name = "";
 		this.wrongAuthClass = "";
@@ -23,7 +23,7 @@ export default class AuthComponent {
 		this.tab = this.TABS.auth;
 
 
-		setTimeout(()=>Animate.background('.auth'), 500)
+		//setTimeout(()=>Animate.background('.auth'), 500)
 
 	}
 

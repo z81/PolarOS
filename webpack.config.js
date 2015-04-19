@@ -24,13 +24,14 @@ var config = {
                 warnings: false
             }
         }),
-        /*new CompressionPlugin({
+        /*
+        new CompressionPlugin({
             asset: "{file}.gz",
             algorithm: "gzip",
             regExp: /\.css$|\.js$|\.html$/,
             threshold: 10240,
             minRatio: 0.5
-        })*/
+        })//*/
     ],
     module: {
         loaders: [

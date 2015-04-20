@@ -24,7 +24,7 @@ var config = {
                 warnings: false
             }
         }),
-        /*
+        //*
         new CompressionPlugin({
             asset: "{file}.gz",
             algorithm: "gzip",

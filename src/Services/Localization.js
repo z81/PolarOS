@@ -17,7 +17,8 @@ export default class Localization {
 		window.l = Localization.l;
 		_lang = window.navigator.userLanguage || window.navigator.language;
 		Localization._importLags();
-		if(!(_lang in langsList)) {
+
+		if(langsList.indexOf(_lang) === -1 || langsList.indexOf(_lang.split('-')[0]) === -1) {
 			_lang = 'en-US';
 		}
 		_isReady = true;

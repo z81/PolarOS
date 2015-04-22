@@ -23,7 +23,7 @@ export default class AuthComponent {
 		this.tab = this.TABS.auth;
 
 
-		//setTimeout(()=>Animate.background('.auth'), 500)
+		setTimeout(()=>Animate.background('.auth'), 500)
 
 	}
 

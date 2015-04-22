@@ -14,6 +14,8 @@ dir 320 server http://193.161.12.8 docs https://polaros-docs.herokuapp.com
 4. npm install
 5. cd server
 6. composer install
+7. php "./vendor/propel/propel/bin/propel.php" sql:build
+8. php "./vendor/propel/propel/bin/propel.php" sql:insert
 
 # Запуск
 1. cd server

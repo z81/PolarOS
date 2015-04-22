@@ -100,7 +100,7 @@ export default class WinComponent {
                     </div>
                     <span class="body-drag-wrapper" style={dragWrapperStyle}></span>
                     <div class="body" style={bodyStyle}>
-                        <iframe sandbox="allow-scripts " name={this.config.secureKey} src={this.config.src}></iframe>
+                        <iframe sandbox="allow-scripts allow-same-origin" name={this.config.secureKey} src={this.config.src}></iframe>
                     </div>
                 </div>
             </div>

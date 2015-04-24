@@ -9,7 +9,7 @@ dir 320 server http://193.161.12.8 docs https://polaros-docs.herokuapp.com
 5. composer - https://getcomposer.org/Composer-Setup.exe
 
 # Установка
-0. Ведео установки на windows [![Установка и запуск PolarOS на windows ](http://img.youtube.com/vi/LQBDNKhHjt8/3.jpg)](http://www.youtube.com/watch?v=LQBDNKhHjt8)
+0. Видео установки на windows http://www.youtube.com/watch?v=LQBDNKhHjt8
 1. Создать свой форк
 2. git clone --recursive АДРЕС ФОРКА //например git clone --recursive git@github.com:z81/PolarOS.git
 3. cd PolarOS

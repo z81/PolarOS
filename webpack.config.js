@@ -43,7 +43,7 @@ var config = {
             {test: /\.less$/,loader: "style-loader!css-loader!less-loader?strictMath&cleancss"},
             {
                 test: /\.(eot|woff|ttf|svg|png|jpg|gif|woff|woff2)$/,
-                loader: 'url-loader?limit=30000&name=../../[name]-[hash].[ext]'
+                loader: 'url-loader?limit=30000&name=[name]-[hash].[ext]'
             },
         ]
     }

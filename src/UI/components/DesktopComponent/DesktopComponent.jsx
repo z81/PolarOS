@@ -36,7 +36,9 @@ export default class DesktopComponent {
         }
 
         this.runApp = (app)=> {
-            WindowsComponent.open(app)
+            if('run' in events) {
+                events.run(app)
+            }
         }
 
         this.shutdown = ()=> {

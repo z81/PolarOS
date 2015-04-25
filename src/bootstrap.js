@@ -6,11 +6,13 @@ global.m = require("mithril.elements");
 import Helper from './Services/Helper.js';
 import Server from './Services/Server.js';
 import Config from './Services/Config.js';
+import Windows from './Services/Windows.js';
 import Localization from './Services/Localization.js';
 
 Helper.init();
 Server.init();
 Config.init();
+Windows.init();
 Localization.init();
 
 // UI

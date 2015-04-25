@@ -32,7 +32,7 @@ Helper.renderComponents({
 // after auth
 Helper.on('config.ready', (data)=>{
 	Helper.renderComponents({
-	      desktop: new DesktopComponent(Config.get(), {'shutdown': Config.save}),
+	      desktop: new DesktopComponent(Config.get(), {'shutdown': Config.save, 'run': Windows.run}),
 	      windows: new WindowsComponent(Config.get())
 	});
 });

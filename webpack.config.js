@@ -9,7 +9,7 @@ var config = {
     context: path.join(__dirname, 'src'),
     entry: {
         index: './bootstrap',
-        vendor: ["mithril"],
+        vendor: ['./vendor'],
         apps_api: './AppsAPI/Library/APILibrary',
         ui: ['../semantic/dist/semantic.min.css', '../semantic/dist/semantic.min.js']
     },

@@ -15,6 +15,7 @@ export default class DesktopComponent {
 
         this.menuIsHidden = true;
         this.startMenuClass = 'hide';
+        this.startMenuWrapperClass = 'hide';
         this.labelsComponent = new LabelsComponent(config);
         this.notifyComponent = new NotifyComponent(config);
 
@@ -26,6 +27,7 @@ export default class DesktopComponent {
         this.onClick = (e) => {
             this.menuIsHidden = !this.menuIsHidden;
             this.startMenuClass = this.menuIsHidden ? 'hide' : '';
+            this.startMenuWrapperClass = this.menuIsHidden ? 'hide' : '';
         };
         this.selectTask = (idx) => {
             return (e) => {
@@ -52,12 +54,14 @@ export default class DesktopComponent {
 
         var wallpaperStyle = {
           background: "url("+ this.config.user.background +")",
-          'background-size': "cover"
+          'background-size': "cover"//,
+          //'z-index':  this.menuIsHidden ? 0 : 10001
         };
 
         return (
             <div id="wallpaper" style={wallpaperStyle}>
                 <span id="taskbar">
+                    <span id="startmenuwrapper" onclick={this.onClick} class={this.startMenuWrapperClass}></span>
                     <span id="startmenu" class={this.startMenuClass}>
                         <div class="user">
                             <span class="icon" style={this.userIconStyle}></span>
